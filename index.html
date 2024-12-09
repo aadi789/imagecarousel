@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="carousel">
+        <div class="carousel/imag">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCUx62kceROY9wRWcDn6Zyhl05PzuwQL67XQ&s" alt="">
+            <img src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/92826/247423/1680764363183_IMG_6894__01818.1686997283.JPG?c=2&imbypass=on">
+            <img src="https://www.jansatta.com/wp-content/uploads/2024/01/Hanuman.jpg" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwoi7erJezs-ikxW4V_Xii24_4J7lRxwgyZg&s" alt="">
+            <img src="https://www.bhaktvatsal.com/public/uploads/13cae36fac5764844be2f3719326c112.webp" alt="">
+        </div>
+        <div class="control">
+            <button class="button previous">&lt;</button>
+            <button class="button next">&rightarrow;</button>
+        </div>
+        <button class="pause button">pause</button>
+    </div>
+    <script>
+        constimagecontainer = document               ('carousel images');
+        constimage = document               ('carousel-images img');
+        constpreviousbutton = document      ('prev');
+        constnextbutton = document          ('next');
+        constpausebutton = document          ('pause');
+         
+        let currentindex = 0;
+        let autoplay = true;
+          
+        functionextimage()
+        {
+            const offset = currentindex*600;// image width is 600px
+            imagecontainer.style.transform=autoplay
+        }
+
+        functionnextimage()
+        {
+            currentindex = (currentindex+1)%imagelength;
+            updatecarousel ();
+        }
+
+
+
+
+    </script>
+</body>
+</html>
